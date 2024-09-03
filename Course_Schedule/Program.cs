@@ -9,7 +9,7 @@ namespace Course_Schedule
     {
         static void Main()
         {
-            Excel excel = new Excel(@"C:\Users\clair\Downloads\View_My_Courses.xlsx");
+            Excel excel = new Excel(@"C:\Users\clair\Downloads\View_My_Courses.xlsx"); //Paste path of Excel File
 
             excel.CreateCalender();
             Console.WriteLine("Done! :D");
@@ -339,7 +339,7 @@ namespace Course_Schedule
 
         public void Save()
         {
-            wb.SaveAs(@"C:\Users\clair\Downloads\View_My_Courses_Calendar.xlsx");
+            wb.SaveAs(@"C:\Users\clair\Downloads\View_My_Courses_Calendar.xlsx"); //Paste path of where to save
             wb.Close();
             excel.Quit();
         }
